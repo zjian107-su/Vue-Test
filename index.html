@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Flash Card App</title>
+</head>
+
+<body>
+
+  <div id="counter">
+    Counter: {{ counter }}
+  </div>
+
+  <script>const Counter = {
+      data() {
+        return {
+          counter: 0
+        }
+      }
+    }
+
+    Vue.createApp(Counter).mount('#counter')</script>
+
+</body>
+
+</html>
